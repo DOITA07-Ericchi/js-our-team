@@ -1,4 +1,4 @@
-const membro = [ {
+const membri = [ {
     nome: "Wayne Barnett",
     ruolo: "Founder & CEO",
     foto: "wayne-barnett-founder-ceo.jpg"
@@ -23,3 +23,13 @@ const membro = [ {
     ruolo: "Graphic Designer",
     foto: "barbara-ramos-graphic-designer.jpg"
 } ]
+
+function stampaMembro(membro){
+    console.log(`Nome:  ${membro.nome}
+Ruolo: ${membro.ruolo}
+Foto:  ${membro.foto}`)
+}
+
+for (let membro of membri) {
+    stampaMembro(membro);
+}
